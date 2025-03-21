@@ -1,0 +1,10 @@
+.block_default {
+    width:60px; 
+    height:60px; 
+    border: solid black; 
+    background-color: white;
+}
+
+.block_on {
+    background-color: black;
+}
