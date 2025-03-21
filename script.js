@@ -22,7 +22,14 @@ btn.addEventListener("click", (e) =>{
             block.setAttribute("class", "block_default");
             block.setAttribute("style", ` width:${w}px; height:${w}px;`);
             block.addEventListener("mouseover", (e) =>{
-                e.target.classList.add("block_on");
+                if(e.target.style["background-color"] != "black"){
+                    e.target.style["background-color"] = "black";
+                    e.target.style.opacity = 0.1;
+                    return;
+                }
+    
+                if(e.target.style.opacity < 1)
+                    e.target.style.opacity = +e.target.style.opacity + 0.1;
             });
 
             row.appendChild(block);

@@ -5,14 +5,9 @@
     align-items: center;
 }
 .block_default {
-    border: solid black; 
+    border: solid gray; 
     background-color: white;
 }
-
-.block_on {
-    background-color: black;
-}
-
 button {
     margin: 0px 0px 15px;
 
