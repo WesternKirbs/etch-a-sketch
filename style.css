@@ -1,10 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .block_default {
-    width:60px; 
-    height:60px; 
     border: solid black; 
     background-color: white;
 }
 
 .block_on {
     background-color: black;
+}
+
+button {
+    margin: 0px 0px 15px;
+
 }
