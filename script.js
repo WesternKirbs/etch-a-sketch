@@ -11,6 +11,8 @@ btn.addEventListener("click", (e) =>{
     const grid = document.createElement("div");
     grid.setAttribute("id","grid");
     n = prompt("choose grid size: ");
+    if(n > 64)
+        return
     for(let i = 0; i<n; i++){
         var row = document.createElement("div");
         row.setAttribute("class", "row");
